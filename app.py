@@ -60,7 +60,7 @@ df_db = pd.DataFrame(DATABASE)
 
 # ส่วนที่ 1: แสดงฐานข้อมูลอ้างอิง (Database Lookup)
 with st.expander("🔍 ตรวจสอบฐานข้อมูลฟิล์ม (Database Lookup)"):
-    st.dataframe(df_db[df_db["film_name"] != "กำหนดเอง (Custom Material)"])
+    st.dataframe(df_db)
 
 st.write("---")
 
