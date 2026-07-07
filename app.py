@@ -649,7 +649,7 @@ html_code = """<!DOCTYPE html>
     <h2 style="color: #1E3A8A;">Barrier Prediction Web App</h2>
     <p>ยินดีต้อนรับสู่ระบบทำนายค่า OTR/WVTR</p>
 </div>
-"""
+""" #
 
 # สั่งให้แสดงผลบนหน้าเว็บ
 components.html(html_code, height=200)
