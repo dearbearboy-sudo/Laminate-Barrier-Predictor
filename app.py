@@ -1,6 +1,5 @@
 import streamlit as st
 import pandas as pd
-import streamlit.components.v1 as components  #
 
 # ตั้งค่าหน้าเว็บ
 st.set_page_config(page_title="Barrier Prediction Web App", layout="wide")
@@ -235,8 +234,4 @@ st.dataframe(summary_df.style.format({
 
 st.info("💡 หมายเหตุ: การคำนวณอ้างอิงหลักการผกผันตามความหนาและแบบจำลองแรงต้านอนุกรม (Series Resistance Model)")
 
-# อ่านไฟล์ HTML จากภายนอกเพื่อตัดปัญหา Syntax Error
-with open("ui_design.html", "r", encoding="utf-8") as f:
-    html_code = f.read()
 
-components.html(html_code, height=600) # ปรับความสูงของหน้าจอตามต้องการ
